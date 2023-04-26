@@ -12,7 +12,7 @@ export function TemplateListPage({ data, title }: TemplateListPageProps) {
       <Text as="h1" fontSize="4xl" paddingY="2">
         {title}
       </Text>
-      <Flex wrap="wrap" gap="12">
+      <Flex wrap="wrap" gap="12" justify="center">
         {data.map((item, index) => (
           <Card key={index} src={item.src} name={item.name}></Card>
         ))}

@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import {
   Box,
   ChakraProvider,
@@ -16,6 +17,7 @@ const theme = extendTheme({
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
+      <Header />
       <Box maxWidth="7xl" marginX="auto">
         <Component {...pageProps} />
       </Box>
