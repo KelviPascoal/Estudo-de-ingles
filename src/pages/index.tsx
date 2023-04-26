@@ -4,6 +4,7 @@ import {
   kitchen,
   livingRoom,
   office,
+  otherObjects,
   personalObjects,
   schoolObjects,
   tools,
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Button colorScheme="blue">aaaaaaaaaaaaaaa</Button>
-      {tools.objects.map((item, index) => (
+      {otherObjects.objects.map((item, index) => (
         <div key={index}>
           <img src={item.src} alt="aaa" width={40} height={40} />
           <p>{item.name}</p>
