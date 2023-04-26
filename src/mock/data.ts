@@ -1,8 +1,3 @@
-type Objects = {
-  name: string;
-  src: string;
-};
-
 export const livingRoom = {
   name: "Living room",
   objects: [
